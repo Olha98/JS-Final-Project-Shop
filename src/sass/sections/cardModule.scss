@@ -1,0 +1,226 @@
+body {
+  background: #e5e5e5;
+}
+.card {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.card_description {
+  height: 32px;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #53535c;
+  margin-bottom: 74px;
+}
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+  }
+}
+.card_item-sale {
+  list-style: none;
+  position: relative;
+  width: 135px;
+  height: 220px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.card-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  max-height: 80px;
+}
+.card_img {
+  width: auto;
+  max-height: 80px;
+}
+.card_img.cover {
+  object-fit: cover;
+}
+.card_vector-notActiv,
+.card_vector-isActiv {
+  position: absolute;
+  width: 20px;
+  height: 17.79px;
+  left: 110px;
+  top: 10px;
+}
+.card_name {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.card_rating {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(47.73deg, #ff8a9d 15.48%, #ffc390 81.25%);
+  margin-bottom: 16px;
+  margin-right: 5px;
+}
+.card_rating-list {
+  display: flex;
+}
+.card_price {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #53535c;
+}
+.card_price {
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+  color: #b3b3b3;
+}
+@media (max-width: 767px) {
+  .card_item-sale:not(:nth-child(2n)) {
+    margin-right: 10px;
+  }
+  .card_item-sale:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    padding-bottom: 45px;
+  }
+  .card_description {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 20px;
+  }
+  .card-image-sale {
+    margin-bottom: 23px;
+  }
+  .card_img-tablet {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height: 140px;
+  }
+  .card-image {
+    max-height: 140px;
+  }
+  .card_vector-notActiv,
+  .card_vector-isActiv {
+    width: 20px;
+    height: 17.79px;
+    left: 175px;
+    top: 10px;
+  }
+  .card_item-sale {
+    width: 204px;
+    height: 300px;
+    padding: 20px;
+  }
+  .card_name {
+    width: 164px;
+    height: 33px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+  .card_rating {
+    margin-bottom: 26px;
+    display: block;
+  }
+  .card_item-sale:not(:nth-child(3n)) {
+    margin-right: 18px;
+  }
+  .card_item-sale:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 18px;
+  }
+  .card_prise-block {
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .card_price {
+    display: initial;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
+    color: #b3b3b3;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 1080px;
+    padding-bottom: 45px;
+  }
+  .card-image {
+    max-height: 140px;
+  }
+  .card_img-tablet {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height: 140px;
+  }
+  .card_img.cover {
+    object-fit: cover;
+  }
+  .card_vector-notActiv,
+  .card_vector-isActiv {
+    width: 20px;
+    height: 17.79px;
+    left: 175px;
+    top: 10px;
+  }
+  .card_prise-block {
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .card_price {
+    display: initial;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
+    color: #b3b3b3;
+  }
+  .card_item-sale {
+    font-weight: 600;
+    line-height: 22px;
+    width: 204px;
+    height: 300px;
+    text-align: right;
+    padding: 17px 19px 17px 20px;
+    color: #53535c;
+  }
+  .card_item-sale:not(:nth-child(5n)) {
+    margin-right: 15px;
+  }
+  .card_item-sale:not(:nth-last-child(-n + 5)) {
+    margin-bottom: 15px;
+  }
+}

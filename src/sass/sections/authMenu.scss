@@ -1,0 +1,74 @@
+.auth-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  min-width: 204px;
+  min-height: auto;
+  background: $main__background-color;
+  word-wrap: break-word;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.authMenu_component {
+  position: absolute;
+  border-radius: 10px;
+  background-color: $main__background-color;
+}
+
+.user-name {
+  margin-top: 10px;
+  padding: 0 5px 0 20px;
+  @include font (600, 18px, 22px, $main--text-color);
+  font-style: normal;
+}
+
+.auth-menu__list_item {
+  margin-top: 10px;
+  padding: 0 5px 0 20px;
+  @include font (500, 14px, 17px, $main--text-color);
+  font-style: normal;
+  cursor: pointer;
+  &:first-child {
+    margin-top: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $auth-menu__background-color_hover;
+  }
+}
+
+.auth-menu__exit {
+  margin-top: 20px;
+  padding: 10px 5px 0 20px;
+  min-height: 46px;
+  background-color: $modal-module__background-color_exit;
+  @include font (500,14px, 17px, $main--text-color);
+  font-style: normal;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .auth-menu {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1200px){
+  .body {
+    overflow: auto;
+  }
+  .auth-menu {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
